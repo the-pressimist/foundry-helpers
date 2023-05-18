@@ -4,9 +4,11 @@ Documentation=https://foundryvtt.com/
 After=network.target
 
 [Service]
-# Environment=
+# if you want to set any Environment Variables:
+# Environment=FOO=bar
 Type=simple
 User=root
+# the path must reflect your install directory, default is the one used on the linux install guide: https://foundryvtt.com/article/installation/
 ExecStart=/usr/bin/node $HOME/foundryvtt/resources/app/main.js --dataPath=$HOME/foundrydata
 
 [Install]
