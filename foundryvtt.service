@@ -1,0 +1,13 @@
+[Unit]
+Description=foundryvtt - foundry virtual tabletop
+Documentation=https://foundryvtt.com/
+After=network.target
+
+[Service]
+# Environment=
+Type=simple
+User=root
+ExecStart=/usr/bin/node $HOME/foundryvtt/resources/app/main.js --dataPath=$HOME/foundrydata
+
+[Install]
+WantedBy=multi-user.target
