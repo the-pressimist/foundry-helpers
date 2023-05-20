@@ -4,7 +4,8 @@ Documentation=https://foundryvtt.com/
 After=network.target
 
 [Service]
-# if you want to set any Environment Variables:
+# if you want to set any Environment Variables (each must have it's own line):
+# Environment=VAR=value
 # Environment=FOO=bar
 Type=simple
 User=root
